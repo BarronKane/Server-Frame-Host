@@ -10,4 +10,5 @@ Cargo.lock
 # Misc
 **/dist/
 resources/app
+package-lock.json
 node_modules/
