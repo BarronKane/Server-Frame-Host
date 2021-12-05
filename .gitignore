@@ -1,0 +1,13 @@
+#IDE files
+.vscode/
+.idea/
+
+# Intermediates & Binaries
+target/
+Cargo.lock
+**/*.rs.bk
+
+# Misc
+**/dist/
+resources/app
+node_modules/
