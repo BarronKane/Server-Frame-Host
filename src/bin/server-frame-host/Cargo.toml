@@ -1,0 +1,17 @@
+[package]
+name = "server-frame-host"
+version = "0.1.0"
+authors = ["Lance Wallis <bleudeveloper@gmail.com>"]
+edition = "2021"
+
+[[bin]]
+name = "server-frame-host"
+path = "main.rs"
+test = false
+bench = false
+
+[dependencies]
+util = { path = "../../lib/util/" }
+
+actix-web = "3"
+actix-files = "0.5"
