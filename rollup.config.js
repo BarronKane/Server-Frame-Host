@@ -4,6 +4,7 @@ import resolve from '@rollup/plugin-node-resolve';
 import { terser } from 'rollup-plugin-terser';
 import css from 'rollup-plugin-css-only';
 import copy from 'rollup-plugin-copy';
+import { scss } from 'svelte-preprocess';
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -20,7 +21,10 @@ export default {
         svelte({
             compilerOptions: {
                 dev: !production
-            }
+            },
+            preprocess: [
+                scss({  })
+            ]
         }),
         
         css({ output: 'bundle.css' }),
